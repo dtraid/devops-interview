@@ -15,8 +15,6 @@ const createCsv = (data) => {
 };
 
 const readCsvFile = async (file) => {
-  console.log(`Reading file ${file}`);
-
   try {
     const csv = await readFile(file, 'utf8');
 
@@ -27,8 +25,6 @@ const readCsvFile = async (file) => {
 };
 
 const writeCsvFile = async (file, data) => {
-  console.log(`Writing file ${file}`);
-
   const csv = createCsv(data);
 
   try {
