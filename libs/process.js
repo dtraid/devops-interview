@@ -34,7 +34,7 @@ const productCustomers = products.map((product) => {
 const customerTotal = (customer) =>
   orders
     .filter((order) => order.customer === customer.id)
-    .reduce((acc, order) => acc + orderCost(order.products), 0);
+    .reduce((acc, order) => acc + productsCost(order.products), 0);
 
 const customerRanking = customers
   .map((customer) => ({ ...customer, total_euros: customerTotal(customer) }))
