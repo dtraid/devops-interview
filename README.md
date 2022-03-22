@@ -17,7 +17,7 @@ Clone the repository and run the project:
 
 All files are inside the `files` directory.
 
-## Input files
+### Input files
 
 1. **`customers.csv`** keeps customer information:
    - `id`: numeric customer id.
@@ -32,7 +32,7 @@ All files are inside the `files` directory.
    - `customer`: numeric id of the customer who created the order.
    - `products`: space-separated list of product ids ordered by the customer.
 
-## Output files
+### Output files
 
 1. **`order_prices.csv`** lists the total cost of each order:
    - `id`: numeric id of the order.
