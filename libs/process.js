@@ -43,6 +43,7 @@ const listCustomersByProduct = products.map((product) => ({
   customer_ids: [...getCustomersByProduct(product.id)].join(' '),
 }));
 
+// Calculate the total spending of a customer
 const getCustomerTotal = (customer) =>
   orders
     .filter((order) => order.customer === customer.id)
