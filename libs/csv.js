@@ -1,7 +1,7 @@
 import { readFile, writeFile } from 'fs/promises';
 
 const parseCsv = (csv) => {
-  const lines = csv.split('\n').filter((line) => line);
+  const lines = csv.split(/[\r\n]+/).filter((line) => line);
   const [headers, ...content] = lines.map((line) => line.split(',').map((value) => value.trim()));
 
   return content.map((row) => headers.reduce((acc, key, i) => ({ ...acc, [key]: row[i] }), {}));
