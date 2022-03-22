@@ -1,4 +1,4 @@
-import { readCsvFile, writeCsvFile } from './csv.js';
+import { readCsvFile, writeCsvFile } from './libs/csv.js';
 
 const products = await readCsvFile('./products.csv');
 const rawOrders = await readCsvFile('./orders.csv');
