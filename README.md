@@ -13,6 +13,10 @@ Clone the repository and run the project:
 > git clone https://github.com/dtraid/devops-interview.git
 > node .
 
+## CSV files
+
+All files are inside the `files` directory.
+
 ## Input files
 
 1. **`customers.csv`** keeps customer information:
