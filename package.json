@@ -1,0 +1,20 @@
+{
+  "name": "devops-interview",
+  "version": "1.0.0",
+  "description": "Da, da, da.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtraid/devops-interview.git"
+  },
+  "author": "Diego Traíd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dtraid/devops-interview/issues"
+  },
+  "homepage": "https://github.com/dtraid/devops-interview#readme"
+}
