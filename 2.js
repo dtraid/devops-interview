@@ -1,7 +1,12 @@
 import { readCsvFile, writeCsvFile } from './csv.js';
 
 const products = await readCsvFile('./products.csv');
-const orders = await readCsvFile('./orders.csv');
+const rawOrders = await readCsvFile('./orders.csv');
+
+const orders = rawOrders.map((order) => ({
+  ...order,
+  products: order.products.split(/\s+/),
+}));
 
 const productCustomers = products.map((product) => {
   const customerIds = orders.reduce(
