@@ -33,8 +33,10 @@ const listOrderCosts = orders.map((order) => ({
 const getCustomersByProduct = (productId) =>
   orders.reduce(
     (customers, order) =>
-      order.products.includes(productId) ? customers.add(order.customer) : customers,
-    new Set()
+      order.products.includes(productId) && !customers.includes(order.customer)
+        ? [...customers, order.customer]
+        : customers,
+    []
   );
 
 // List customers that have purchased each product (task 2)
