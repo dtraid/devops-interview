@@ -1,3 +1,7 @@
+// customers: { id:string, firstname:string, lastname:string }
+// orders: { id:string, customer:string, products:number[] }
+// products: { id:string, name:string, cost:number }
+
 // Find product by id
 const getProduct = (productId, products) => products.find((product) => product.id === productId);
 
