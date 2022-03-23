@@ -37,7 +37,7 @@ const getCustomersByProduct = (productId) =>
     new Set()
   );
 
-// List customers that have purchased each product
+// List customers that have purchased each product (task 2)
 const listCustomersByProduct = products.map((product) => ({
   id: product.id,
   customer_ids: [...getCustomersByProduct(product.id)].join(' '),
