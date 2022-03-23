@@ -1,8 +1,8 @@
-import { readCsvFile } from './csv.js';
+import { readCsv } from './csv.js';
 
-const customers = await readCsvFile('./files/customers.csv');
-const rawProducts = await readCsvFile('./files/products.csv');
-const rawOrders = await readCsvFile('./files/orders.csv');
+const customers = await readCsv('./files/customers.csv');
+const rawProducts = await readCsv('./files/products.csv');
+const rawOrders = await readCsv('./files/orders.csv');
 
 // Convert cost to Number
 const products = rawProducts.map((product) => ({ ...product, cost: parseFloat(product.cost) }));
