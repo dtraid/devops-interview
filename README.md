@@ -11,6 +11,7 @@
 Clone the repository and run the project:
 
 > git clone https://github.com/dtraid/devops-interview.git
+> cd devops-interview
 > node .
 
 ## CSV files
